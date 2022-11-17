@@ -1,8 +1,8 @@
 FROM openjdk:17-alpine
 
-COPY ./output/ /app
+COPY ./target/ /app
 WORKDIR /app
-ENV MYSQL_ROOT_PASSWORD=root
+#ENV MYSQL_ROOT_PASSWORD=root
 
 #CMD["java","-jar","/app/demo-v2.8.jar"]
 ENTRYPOINT [ \
